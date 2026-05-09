@@ -5,6 +5,6 @@ public class Hazard : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-            GameManager.I.RestartLevel();
+            GameManager.I.TakeDamage();
     }
 }
